@@ -1,4 +1,4 @@
-## Publish Your Own React Component as Npm Package
+## Create Your Own React Component as Npm Package
 
 ### Setting up environment
 #### 1. Create empty folder, Name it as you wish.
@@ -23,7 +23,8 @@
 }
 ```
 #### 6. Configure webpack to transpile our code
-Create 2 file: 
+Create 2 file:
+
 `webpack.config.js`
 ```typescript
 var path = require('path');
@@ -94,7 +95,8 @@ run `npm run build`
 ### Use package in other project but only on our computer
 run `npm link <package_name>`
 <package_name> is full patch of project package.
-Ex: `npm link /Users/letrungdo/React_Projects/npm_package`
+
+- Ex: `npm link /Users/letrungdo/React_Projects/npm_package`
 
 ### Publishing the package
 Create account at https://www.npmjs.com/signup
