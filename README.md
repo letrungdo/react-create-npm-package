@@ -1,6 +1,6 @@
-## - Create Your Own React Component as Npm Package
+## Create Your Own React Component as Npm Package
 
-### - Setting up environment
+### Setting up environment
 #### 1. Create empty folder, Name it as you wish.
 #### 2. Run `npm init`. Just keep pressing ENTER until it disappears. 
 #### 3. Now install dependencies:
@@ -103,11 +103,15 @@ Create account at https://www.npmjs.com/signup
 Then inside component project directory run `npm login` and sign in with your credentials. 
 After that run `npm publish`.
 
-# * Publishing the package to Github repo
+## * Publishing the package to Github repo
 Github package can use as private package for team.
-// Step 1: Change `package.json` a little:
+
+- Step 1: Change `package.json` a little:
+
 Add `publishConfig`
-Edit `name`: @<github_name>/<repo>
+
+Edit `name`: @github_username/repo
+  
 ```json
 {
   "name": "@letrungdo/react-create-npm-package",
@@ -120,12 +124,15 @@ Edit `name`: @<github_name>/<repo>
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
 }
+```
+- Step 2: Authenticate
 
-// Step 2: Authenticate
-```npm login --registry=https://npm.pkg.github.com/```
-Note: Password is GITHUB_TOKEN ()
+`npm login --registry=https://npm.pkg.github.com/`
 
-// Step 3: Publish
+Note: Password is Github `Personal access tokens`
+
+- Step 3: Publish
+
 ```npm publish```
 
 => Result: https://github.com/letrungdo/react-create-npm-package/packages/79168
